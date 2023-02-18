@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+  <title>HelpJuice</title>
+</head>
+<body>
+<div class="header-container">
+  <nav class="navigation-list">
+    <button class="nav-btn">Blog</button>
+    <button class="nav-btn">Developers</button>
+    <button class="nav-btn">Developer Blog</button>
+    <button class="nav-btn">Support</button>
+  </nav>
+  <div class="search-container">
+    <div class="dropdown-nav">
+      <span id="searchCategory">All Products</span>
+      <div class="arrow-down-search"></div>
+      <div class="dropdown-content">
+        <p id="product1">Product 1</p>
+        <p id="product2">Product 2</p>
+        <p id="product3">Product 3</p>
+      </div>
+    </div>
+    <input
+      class="search-bar"
+      type="text"
+    />
+  </div>
+  <img
+    class="header-image"
+    src="https://i.ibb.co/6FKp0Rq/navbar-illu.png"
+    alt="navbar-illu"
+  />
+</div>
+<div class="content-container">
+  <div class="route-title">
+    <h5>Home</h5>
+    <div id="routeContainer" class="route-container">
+      <div class="chevron right"></div>
+      <h5 id="navTitle" class="nav-title"></h5>
+    </div>
+  </div>
+  <hr />
+  <div class="sub-container">
+    <div
+      id="dropdownNav"
+      class="dropdown-content-container"
+    >
+      <button id="startedBtn" class="nav-btn-container">
+        <div class="dropdown-nav-btn">
+          <span>Getting Started</span>
+          <div id="arrowRight" class="arrow-right"></div>
+          <div id="arrowDown" class="arrow-down"></div>
+        </div>
+        <div class="dropdown-content-links">
+          <a class="side-nav">User Guides</a>
+          <a class="side-nav">Developer</a>
+          <a class="side-nav">Release Notes</a>
+        </div>
+      </button>
+      <button id="personalizationBtn" class="nav-btn-container">
+        <div class="dropdown-nav-btn">
+          <span>Personalization</span>
+          <div class="arrow-right"></div>
+          <div class="arrow-down"></div>
+        </div>
+      </button>
+    </div>
+    <div class="content">
+      <h1>Getting Started</h1>
+      <div class="content-grid">
+        <div class="card">
+          <img
+            class="card-image"
+            src="https://i.ibb.co/cYv28QB/user-guides.png"
+            alt="user-guides"
+          />
+          <div>
+            <h3 class="card-title">User Guides</h3>
+            <p class="card-describtion">
+              We're a new category, with lots of useful information
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-image"
+            src="https://i.ibb.co/3hfJY31/developer.png"
+            alt="developer"
+          />
+          <div>
+            <h3 class="card-title">Developer</h3>
+            <p class="card-describtion">
+              We're a new category, with lots of useful information
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-image"
+            src="https://i.ibb.co/Jnbs3gX/release.png"
+            alt="release"
+          />
+          <div>
+            <h3 class="card-title">Release Notes</h3>
+            <p class="card-describtion">
+              We're a new category, with lots of useful information
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer-upper">
+    <h3 class="footer-title">Still need help?</h3>
+    <form class="form-container">
+      <div class="form-input-container">
+        <label for="firstName">First Name</label>
+        <input id="firstName" class="form-input" type="text" required>
+      </div>
+      <div class="form-input-container">
+        <label for="lastName">Last Name</label>
+        <input id="lastName" class="form-input" type="text" required>
+      </div>
+      <div class="form-input-container">
+        <label for="email">Email</label>
+        <input id="email" class="form-input" type="email" required>
+      </div>
+      <button class="form-btn" type="submit">Get Started</button>
+    </form>
+    <hr class="divider">
+    <div class="footer-lower">
+      <ul class="footer-lower-list">
+        <li><strong>Products</strong></li>
+        <li>Personalization</li>
+        <li>eCommerce</li>
+        <li>Order Management</li>
+        <li>Point of Sale</li>
+      </ul>
+      <ul class="footer-lower-list">
+        <li><strong>Resources</strong></li>
+        <li>Blog</li>
+        <li>Developer Blog</li>
+        <li>Developers</li>
+        <li>Support</li>
+      </ul>
+      <ul class="footer-lower-list">
+        <li><strong>Who We Are</strong></li>
+        <li>Who We Are</li>
+        <li>Leadership</li>
+        <li>News/Press</li>
+        <li>Ecommerce Awards</li>
+      </ul>
+      <ul class="footer-lower-list">
+        <li><strong>Employee Login</strong></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
